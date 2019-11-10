@@ -1,0 +1,243 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "course help",
+            "intents": [
+                {
+                    "name": "AMAZON.FallbackIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.CancelIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.HelpIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.StopIntent",
+                    "samples": []
+                },
+                {
+                    "name": "AMAZON.NavigateHomeIntent",
+                    "samples": []
+                },
+                {
+                    "name": "GetPreRequisites",
+                    "slots": [
+                        {
+                            "name": "class",
+                            "type": "PreRequisites"
+                        }
+                    ],
+                    "samples": [
+                        "Prereqs for {class}"
+                    ]
+                },
+                {
+                    "name": "GetRequiredCourses",
+                    "slots": [
+                        {
+                            "name": "requiredClass",
+                            "type": "listClass"
+                        }
+                    ],
+                    "samples": [
+                        "test {requiredClass}"
+                    ]
+                },
+                {
+                    "name": "GetBestProfessor",
+                    "slots": [
+                        {
+                            "name": "course",
+                            "type": "listClass"
+                        }
+                    ],
+                    "samples": [
+                        "{course} professor",
+                        "best professor for {course} "
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "PreRequisites",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "CS 1136"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS 1336"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MATH 2417"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS 1200"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MATH 2413"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ECS 1100"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "UNIV 1010"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "ProfessorRating",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "K Smith"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": " I Page"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "W Chin"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "E Salazar"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "J Cole"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "T McMahan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "G Arnold"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "M Christiansen"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "listClass",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "UNIV 1010"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "ECS 1100"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MATH 2413"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "MATH 2417"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS 1336"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS 1136"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS 1200"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS 3377"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS 3345"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS 3341"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS 3305"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS 2336"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS 2337"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "CS 2305"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "BestProfessors",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "Dr. Farage"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "Dr. Wilson"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}
