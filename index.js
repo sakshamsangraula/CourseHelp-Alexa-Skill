@@ -259,7 +259,7 @@ const GetBestProfessor_Handler =  {
 
        say += slotStatus;
         
-        
+        // Using selection logic to provide feedback about specific professors. 
         if(slotValues.course.heardAs === `cs 3305`){
             say = `Timothy Farage is the best professor for cs 3305 with 65% of students receiving a grade more than or equal to A minus`;
         }
